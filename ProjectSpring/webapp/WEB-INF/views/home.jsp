@@ -137,7 +137,7 @@
 							<h1 style="padding-top: 40px;">날씨 정보</h1><br>
 							<h4>캠핑장 가기전에 미리 날씨 확인해보세요 !</h4>
 							<button type="button" class="btn btn-default"
-								onclick="javascript:searchWithLatLng();">지금 이곳의 날씨는?</button>
+								onclick="javascript:searchWithLatLng(); this.onclick=null;">지금 이곳의 날씨는?</button>
 						</div>
 		        <div class="col-md-6 col-sm-6 col-xs-12">
 							<div id="weather"></div>
@@ -233,72 +233,6 @@ function getWeatherEngineData(LAT, LNG, MODE)
 </script>
 
 
-
-<!-- 더보기 4 x 2 -->
-<section class="resort-overview-block">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12 col-xs-12 remove-padd-right">
-        <div class="side-A">
-          <div class="product-thumb">
-            <div class="image">
-              <a><img src="images/campingitem1.jpg" class="img-responsive" alt="image" width="280px" height="280px"></a>
-            </div>
-          </div>
-        </div>
-        <div class="side-B">
-          <div class="product-desc-side">
-            <h3><a href="/menus/news">텐트, 침낭 구입</a></h3>
-          </div>
-        </div>
-      </div>
-      <div class="clear"></div>
-      <div class="col-md-6 col-sm-12 col-xs-12 remove-padd-left">
-        <div class="side-A">
-          <div class="product-thumb">
-            <div class="image">
-							<a><img src="images/campingitem2.jpg" class="img-responsive" alt="image" width="280px" height="280px"></a>
-            </div>
-          </div>
-        </div>
-        <div class="side-B">
-          <div class="product-desc-side">
-            <h3><a href="/menus/news">버너, 랜턴, 화로 구입</a></h3>
-          </div>
-        </div>
-      </div>
-      <div class="clear"></div>
-      <div class="col-md-6 col-sm-12 col-xs-12 remove-padd-right">
-        <div class="side-A">
-          <div class="product-desc-side">
-            <h3><a href="/menus/news">취사도구, 소품 구입</a></h3>
-          </div>
-        </div>
-        <div class="side-B">
-          <div class="product-thumb">
-            <div class="image txt-rgt">
-             <a><img src="images/campingitem3.jpg" class="img-responsive" alt="image" width="280px" height="280px"></a>            </div>
-          </div>
-        </div>
-      </div>
-      <div class="clear"></div>
-      <div class="col-md-6 col-sm-12 col-xs-12 remove-padd-left">
-        <div class="side-A">
-          <div class="product-desc-side">
-            <h3><a href="/menus/news">간식거리 구입</a></h3>
-          </div>
-        </div>
-        <div class="side-B">
-          <div class="product-thumb txt-rgt">
-            <div class="image">
-              <a><img src="images/campingitem4.jpg" class="img-responsive" alt="image" width="280px" height="280px"></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</section>
 
 
 <!-- 캐러셀2 -->
