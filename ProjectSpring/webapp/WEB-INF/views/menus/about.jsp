@@ -18,7 +18,7 @@
 <br>
 <br>
 <section style="text-align: center;">
-	<img src="/images/about.png" />
+	<img src="/images/about.jpg";/>
 </section>
 <br>
 <br>
