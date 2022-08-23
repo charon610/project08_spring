@@ -27,16 +27,16 @@
                 <c:url value="/displayImg" var="url">
     	        <c:param name="filename" value="${list.uploadpath}/s_${list.img_name}_${list.filename}" />
     	        </c:url>
-                <a href="single-blog.html"><img alt="image" class="img-responsive" src="${url}"></a>
+                <a href="goodsinfo?goods_idx=${list.goods_idx}"><img alt="image" class="img-responsive" src="${url}"></a>
               </div>
             </div>
           </div>
         <div class="side-B">
           <div class="product-desc-side">
-            <h3><a href="single-blog.html">${ list.goods_name }</a></h3>
+            <h3><a href="goodsinfo?goods_idx=${list.goods_idx}">${ list.goods_name }</a></h3>
               <p>${ list.goods_info }</p>
               <p>${ list.goods_price }원</p>
-              <div class="links"><a href="single-blog.html">구매하기</a></div>
+              <div class="links"><a href="goodsinfo?goods_idx=${list.goods_idx}">구매하기</a></div>
           </div>
         </div>
       </div>

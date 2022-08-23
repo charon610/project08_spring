@@ -31,7 +31,7 @@
     <div class="item">
       <img src="images/slideimage1.jpg" style="width:100%; height: 500px" alt="Third slide">
       <div class="carousel-caption">
-				<a href="/menus/news"><span style="font-size: 40px; color: #888888; background-color: white; border-radius: 20px;">&nbsp;캠핑용품은 여기서 구매하세요!&nbsp;</span></a>
+				<a href="/shopping"><span style="font-size: 40px; color: #888888; background-color: white; border-radius: 20px;">&nbsp;캠핑용품은 여기서 구매하세요!&nbsp;</span></a>
       </div>
     </div>
   </div>

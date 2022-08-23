@@ -22,6 +22,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.spring.admin.dao.GoodsDao;
+import com.spring.admin.dao.impl.GoodsDaoImpl;
 import com.spring.admin.service.AdminService;
 import com.spring.admin.vo.Criteria;
 import com.spring.admin.vo.GoodsVo;
@@ -101,12 +103,11 @@ public class AdminController {
 	// goods
 	//--------------------------------------------
 	@RequestMapping(value="/addNewGoodsForm", method=RequestMethod.GET)
-	public  String addNewGoodsForm() {
+	public String addNewGoodsForm() {
+		// temp 폴더 생성용
 		File temp = new File("c:\\upload\\temp");
-			if(!temp.exists()) { 
-				temp.mkdirs();
-			}
-		return  "admin/goods/addNewGoodsForm";  
+		if(!temp.exists()) {temp.mkdirs();}
+		return "admin/goods/addNewGoodsForm";
 	}
 
 	@RequestMapping(value = "/addNewGoods", method = RequestMethod.POST)
@@ -207,17 +208,13 @@ public class AdminController {
 		return "menus/shopping";
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@RequestMapping(value="/goodsinfo", method=RequestMethod.GET)
+	public String goodsinfo(GoodsVo goodsVo, Model model) {
+		
+		model.addAttribute("list", adminService.getImageList(goodsVo.getGoods_idx()));
+		model.addAttribute("goodsInfo", adminService.goodsInfo(goodsVo.getGoods_idx()));
+		
+		return "goods/goodsinfo";
+	}
 	
 }
