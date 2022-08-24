@@ -150,14 +150,9 @@ ul{
     padding: 10px 0;
 }
 #logo > a {
-	color: #4d6a3f;
-	    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: -5px;
-    
-#logo > a span {
-    color: #000;
-    font-size: 50px;
+	position: relative;
+	padding-right: 50px;
+	width : 100px;
 }
 .book-now-btn {
     background: #ff4157 none repeat scroll 0 0;
