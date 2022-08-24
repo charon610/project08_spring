@@ -75,10 +75,11 @@
       <div class="container">
         <div class="top-row">
           <div class="row">
-            <div class="col-md-2 col-sm-6 col-xs-6">
-              <div id="logo">
-                <a href="/"><img alt="logo" src="../images/logo.jpg" ></a>
-              </div>
+           	<div class="col-md-4 col-sm-6 col-xs-6">
+							<div id="logo">
+								<a href="/"> <img alt="logo" src="../images/logo.jpg"
+									width=50 height="50"> <span>Camping &nbsp;</span> Plus &nbsp; &nbsp; &nbsp; </a>
+							</div>
             </div>
             <div class="col-sm-6 visible-sm">
             </div>
