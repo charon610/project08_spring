@@ -77,7 +77,7 @@
           <div class="row">
             <div class="col-md-2 col-sm-6 col-xs-6">
               <div id="logo">
-                <a href="/"><img alt="logo" src="../images/logo.jpg" ></a>
+                <a href="/"><img alt="logo" src="../images/logo.jpg"  width=140 height="70"></a>
               </div>
             </div>
             <div class="col-sm-6 visible-sm">
